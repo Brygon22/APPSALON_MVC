@@ -25,14 +25,14 @@ class Email
 
         $mail = new PHPMailer();
         $mail->isSMTP();
-        $mail->Host = 'sandbox.smtp.mailtrap.io';
+        $mail->Host = 'smtp-relay.sendinblue.com';
         $mail->SMTPAuth = true;
         $mail->Port = 2525;
-        $mail->Username = '864934a558fff8';
-        $mail->Password = '8659cd33da4d86';
+        $mail->Username = 'bryan21gonca@hotmail.com';
+        $mail->Password = 'yLH6fKBMr41hRsJ5';
 
         $mail->setFrom('cuentas@appsalon.com');
-        $mail->addAddress('cuentas@appsalon.com', 'appsalon.com');
+        $mail->addAddress($this->email);
         $mail->Subject = 'Confirma tu Cuenta';
 
 
@@ -44,7 +44,7 @@ class Email
         $contenido = "<html>";
         $contenido .= "<p><strong>Hola " . $this->nombre . "</strong> Has creado tu cuenta
         en AppSalon, solo debes confirmarla presionando en el siguiente enlace </p>";
-        $contenido .= "<p>Presiona aqui: <a href='http://localhost:3000/confirmar-cuenta?token="
+        $contenido .= "<p>Presiona aqui: <a href='https://barberia.alwaysdata.net/confirmar-cuenta?token="
             . $this->token . "'>Confirmar Cuenta</a> </p>";
         $contenido .= "<p>Si tu no solicitaste esta cuenta, puedes ignorar el mensaje</p>";
         $contenido .= "</html>";
@@ -62,14 +62,14 @@ class Email
 
         $mail = new PHPMailer();
         $mail->isSMTP();
-        $mail->Host = 'sandbox.smtp.mailtrap.io';
+        $mail->Host = 'smtp-relay.sendinblue.com';
         $mail->SMTPAuth = true;
         $mail->Port = 2525;
-        $mail->Username = '864934a558fff8';
-        $mail->Password = '8659cd33da4d86';
+        $mail->Username = 'bryan21gonca@hotmail.com';
+        $mail->Password = 'yLH6fKBMr41hRsJ5';
 
         $mail->setFrom('cuentas@appsalon.com');
-        $mail->addAddress('cuentas@appsalon.com', 'appsalon.com');
+        $mail->addAddress($this->email);
         $mail->Subject = 'Reestablece tu password';
 
 
@@ -81,7 +81,7 @@ class Email
         $contenido = "<html>";
         $contenido .= "<p><strong>Hola " . $this->nombre . "</strong> Has solicitado
         reestablecer tu password, sigue el siguiente enlace para hacerlo.</p>";
-        $contenido .= "<p>Presiona aqui: <a href='http://localhost:3000/recuperar?token="
+        $contenido .= "<p>Presiona aqui: <a href='https://barberia.alwaysdata.net/recuperar?token="
             . $this->token . "'>Reestablecer password</a> </p>";
         $contenido .= "<p>Si tu no solicitaste este cambio, puedes ignorar el mensaje</p>";
         $contenido .= "</html>";
