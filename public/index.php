@@ -5,7 +5,6 @@ require_once __DIR__ . '/../includes/app.php';
 use Controllers\AdminController;
 use Controllers\APIController;
 use Controllers\CitaController;
-use Controllers\LoginControler;
 use Controllers\LoginController;
 use Controllers\ServicioController;
 use MVC\Router;

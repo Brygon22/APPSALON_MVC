@@ -1,6 +1,6 @@
 <?php
 
-$db = mysqli_connect($_ENV['DB_HOST'], $_ENV['DB_USER'], $_ENV['DB_PASS'], $_ENV['DB_BD']);
+$db = mysqli_connect('mysql-barberia.alwaysdata.net', 'barberia', 'bo3xley76849532', 'barberia_mvc');
 
 $db->set_charset("utf8");
 
