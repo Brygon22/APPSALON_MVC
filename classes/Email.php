@@ -25,13 +25,13 @@ class Email
 
         $mail = new PHPMailer();
         $mail->isSMTP();
-        $mail->Host = 'smtp-relay.sendinblue.com';
+        $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Port = 2525;
-        $mail->Username = 'bryan21gonca@hotmail.com';
-        $mail->Password = 'yLH6fKBMr41hRsJ5';
+        $mail->Port = 587;
+        $mail->Username = 'bryangonca@gmail.com';
+        $mail->Password = 'gzrttgfeseoplfvo';
 
-        $mail->setFrom('cuentas@appsalon.com');
+        $mail->setFrom('bryangonca@gmail.com');
         $mail->addAddress($this->email);
         $mail->Subject = 'Confirma tu Cuenta';
 
@@ -62,13 +62,13 @@ class Email
 
         $mail = new PHPMailer();
         $mail->isSMTP();
-        $mail->Host = 'smtp-relay.sendinblue.com';
+        $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Port = 2525;
-        $mail->Username = 'bryan21gonca@hotmail.com';
-        $mail->Password = 'yLH6fKBMr41hRsJ5';
+        $mail->Port = 587;
+        $mail->Username = 'bryangonca@gmail.com';
+        $mail->Password = 'gzrttgfeseoplfvo';
 
-        $mail->setFrom('cuentas@appsalon.com');
+        $mail->setFrom('bryangonca@gmail.com');
         $mail->addAddress($this->email);
         $mail->Subject = 'Reestablece tu password';
 
